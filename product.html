@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details – Manas</title>
+  <meta name="description" content="View product details, sizes, and add to cart at Manas." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">M<span>anas</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Collections</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="nav-icon-btn" title="Search"><i class="fas fa-search"></i></button>
+          <a href="cart.html" class="nav-icon-btn" title="Cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Collections</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fas fa-chevron-right" style="font-size:.7rem;"></i>
+      <a href="products.html">Collections</a>
+      <i class="fas fa-chevron-right" style="font-size:.7rem;"></i>
+      <span id="breadcrumb-name">Product</span>
+    </div>
+  </div>
+
+  <!-- Product Detail -->
+  <section class="product-detail-section">
+    <div class="container">
+      <div class="product-detail-grid">
+
+        <!-- Gallery -->
+        <div class="product-gallery reveal-left">
+          <div class="main-img-wrap" id="main-img-wrap">
+            <img src="" alt="Product" id="main-product-img" />
+          </div>
+          <div class="thumb-grid" id="thumb-grid">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="product-info reveal-right">
+          <div class="product-info-cat" id="detail-cat"></div>
+          <h1 class="product-info-name" id="detail-name">Loading…</h1>
+
+          <div class="product-rating">
+            <div class="stars" id="detail-stars">★★★★★</div>
+            <div class="rating-count"><a href="#reviews">128 reviews</a></div>
+          </div>
+
+          <div class="product-info-price">
+            <span class="price-current" id="detail-price">₹0</span>
+            <span class="price-original" id="detail-original"></span>
+            <span class="price-off" id="detail-off"></span>
+          </div>
+
+          <p class="product-info-desc" id="detail-desc">Loading product description…</p>
+
+          <!-- Size -->
+          <div class="size-section">
+            <div class="option-label">Select Size <a href="#">Size Guide</a></div>
+            <div class="size-options" id="size-options">
+              <button class="size-btn">XS</button>
+              <button class="size-btn">S</button>
+              <button class="size-btn selected">M</button>
+              <button class="size-btn">L</button>
+              <button class="size-btn">XL</button>
+              <button class="size-btn">XXL</button>
+            </div>
+          </div>
+
+          <!-- Quantity -->
+          <div class="qty-section">
+            <div class="option-label">Quantity</div>
+            <div class="qty-control">
+              <button class="qty-btn" id="qty-minus"><i class="fas fa-minus"></i></button>
+              <input type="number" class="qty-input" id="qty-input" value="1" min="1" max="10" readonly />
+              <button class="qty-btn" id="qty-plus"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="detail-cta">
+            <button class="btn btn-primary" id="add-to-cart-btn">
+              <i class="fas fa-shopping-bag"></i> Add to Cart
+            </button>
+            <button class="btn btn-gold" id="buy-now-btn">
+              <i class="fas fa-bolt"></i> Buy Now
+            </button>
+          </div>
+
+          <!-- Features -->
+          <div class="detail-features">
+            <div class="detail-feature"><span>✦</span> Pure Handloom Fabric</div>
+            <div class="detail-feature"><span>✦</span> Free Shipping &gt; ₹2,500</div>
+            <div class="detail-feature"><span>✦</span> Easy 15-Day Returns</div>
+            <div class="detail-feature"><span>✦</span> Secure Payment</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Tabs -->
+      <div class="product-tabs reveal">
+        <div class="tab-headers">
+          <button class="tab-btn active" data-tab="description">Description</button>
+          <button class="tab-btn" data-tab="fabric">Fabric & Care</button>
+          <button class="tab-btn" data-tab="sizing">Sizing Info</button>
+          <button class="tab-btn" data-tab="reviews">Reviews (128)</button>
+        </div>
+        <div class="tab-panel active" id="tab-description">
+          <p>This exquisite piece from our premium collection showcases the finest craftsmanship of Indian artisans. Each garment is individually handcrafted using traditional techniques passed down through generations, ensuring that every piece is unique and full of character.</p>
+          <p>The intricate embroidery is done by master craftsmen using gold and silver threads, creating patterns inspired by Mughal architecture and Indian flora. The result is a garment that transforms the wearer and celebrates the richness of Indian heritage.</p>
+        </div>
+        <div class="tab-panel" id="tab-fabric">
+          <ul>
+            <li>Fabric: Pure Silk / Premium Georgette (as specified per product)</li>
+            <li>Embroidery: Zari, Zardozi, and Resham threadwork</li>
+            <li>Dry Clean Only – do not machine wash</li>
+            <li>Store in a cool, dry place away from direct sunlight</li>
+            <li>Iron on reverse side at low temperature</li>
+            <li>Colours may vary slightly due to monitor settings</li>
+          </ul>
+        </div>
+        <div class="tab-panel" id="tab-sizing">
+          <ul>
+            <li>XS – Bust 32", Waist 26", Hip 36"</li>
+            <li>S  – Bust 34", Waist 28", Hip 38"</li>
+            <li>M  – Bust 36", Waist 30", Hip 40"</li>
+            <li>L  – Bust 38", Waist 32", Hip 42"</li>
+            <li>XL – Bust 40", Waist 34", Hip 44"</li>
+            <li>XXL – Bust 42", Waist 36", Hip 46"</li>
+            <li>For custom sizing, please contact us on WhatsApp</li>
+          </ul>
+        </div>
+        <div class="tab-panel" id="tab-reviews">
+          <div style="display:grid;gap:1.25rem;margin-top:1rem;">
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Absolutely beautiful piece! The quality is outstanding and the delivery was on time. Will definitely order again."</p>
+              <div class="reviewer">
+                <div class="reviewer-avatar">M</div>
+                <div><div class="reviewer-name">Meera Pillai</div><div class="reviewer-loc">Chennai, TN</div></div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">★★★★☆</div>
+              <p class="review-text">"Great craftsmanship. Minor colour difference from photos but overall very happy with the purchase."</p>
+              <div class="reviewer">
+                <div class="reviewer-avatar">S</div>
+                <div><div class="reviewer-name">Sunita Reddy</div><div class="reviewer-loc">Hyderabad, TS</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="section-pad" style="background:var(--cream-dark);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">You May Also Like</p>
+        <h2 class="section-title">Related Products</h2>
+        <span class="gold-divider"></span>
+      </div>
+      <div class="products-grid" id="related-products"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div>
+          <div class="footer-brand-logo">M<span>anas</span></div>
+          <p class="footer-brand-desc">Celebrating Indian textile heritage since 2000.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Collections</div>
+          <ul class="footer-links">
+            <li><a href="products.html?cat=saree">Sarees</a></li>
+            <li><a href="products.html?cat=lehenga">Lehengas</a></li>
+            <li><a href="products.html?cat=kurta">Kurtas</a></li>
+            <li><a href="products.html?cat=sherwani">Sherwanis</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <div class="footer-contact-item"><span><i class="fas fa-phone"></i></span><span>+91 98765 43210</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Manas Clothing. All Rights Reserved.</span></div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"><span class="toast-icon" id="toast-icon">🛍️</span><span id="toast-msg">Added to cart!</span></div>
+  <script src="script.js"></script>
+</body>
+</html>

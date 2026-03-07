@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manas – Traditional Indian Clothing</title>
+  <meta name="description" content="Manas – Premium Traditional Indian Clothing. Shop Kurtas, Sarees, Lehengas, Sherwanis and Ethnic Wear for Men and Women." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">M<span>anas</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Collections</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="nav-icon-btn" title="Search"><i class="fas fa-search"></i></button>
+          <a href="cart.html" class="nav-icon-btn" title="Cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Collections</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Hero Section ───────────────────────────────────────── -->
+  <section class="hero section-pad">
+    <div class="container">
+      <div class="hero-content reveal-left">
+        <p class="hero-tag">New Collection 2026</p>
+        <h1 class="hero-title">
+          Where Tradition<br>Meets <em>Elegance</em>
+        </h1>
+        <p class="hero-desc">
+          Discover the finest Indian ethnic wear — handcrafted with love,
+          woven from legacy. From regal sherwanis to radiant sarees,
+          find your perfect look at Manas.
+        </p>
+        <div class="hero-btns">
+          <a href="products.html" class="btn btn-primary">
+            <i class="fas fa-th-large"></i> Shop Collections
+          </a>
+          <a href="about.html" class="btn btn-outline">Our Story</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">500+</div>
+            <div class="hero-stat-label">Designs</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">12K+</div>
+            <div class="hero-stat-label">Happy Customers</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">25+</div>
+            <div class="hero-stat-label">Years of Craft</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-right">
+        <div class="hero-img-main">
+          <img src="images/hero.png" alt="Manas – Traditional Indian Clothing Collection" loading="eager" />
+        </div>
+        <div class="hero-img-sm">
+          <img src="images/saree.png" alt="Banarasi Silk Saree" loading="lazy" />
+        </div>
+        <div class="hero-img-sm">
+          <img src="images/sherwani.png" alt="Royal Sherwani" loading="lazy" />
+        </div>
+        <div class="hero-badge float-anim">
+          <span class="badge-icon">🏆</span>
+          <div>
+            <div class="badge-text-main">Award Winning</div>
+            <div class="badge-text-sub">Indian Craft 2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Categories ─────────────────────────────────────────── -->
+  <section class="section-pad" style="background:var(--cream-dark);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Browse By</p>
+        <h2 class="section-title">Our Collections</h2>
+        <span class="gold-divider"></span>
+        <p class="section-subtitle">From timeless classics to modern ethnic fusion — find your perfect style.</p>
+      </div>
+      <div class="categories-grid">
+        <a href="products.html?cat=saree" class="category-card reveal">
+          <div class="cat-img-wrap">
+            <img src="images/saree.png" alt="Saree Collection" loading="lazy" />
+          </div>
+          <div class="cat-info">
+            <div class="cat-name">Sarees</div>
+            <div class="cat-count">42 Pieces</div>
+            <div class="cat-link">Explore <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+        <a href="products.html?cat=lehenga" class="category-card reveal">
+          <div class="cat-img-wrap">
+            <img src="images/lehenga.png" alt="Lehenga Collection" loading="lazy" />
+          </div>
+          <div class="cat-info">
+            <div class="cat-name">Lehengas</div>
+            <div class="cat-count">38 Pieces</div>
+            <div class="cat-link">Explore <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+        <a href="products.html?cat=kurta" class="category-card reveal">
+          <div class="cat-img-wrap">
+            <img src="images/kurta.png" alt="Kurta Collection" loading="lazy" />
+          </div>
+          <div class="cat-info">
+            <div class="cat-name">Kurtas</div>
+            <div class="cat-count">65 Pieces</div>
+            <div class="cat-link">Explore <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+        <a href="products.html?cat=sherwani" class="category-card reveal">
+          <div class="cat-img-wrap">
+            <img src="images/sherwani.png" alt="Sherwani Collection" loading="lazy" />
+          </div>
+          <div class="cat-info">
+            <div class="cat-name">Sherwanis</div>
+            <div class="cat-count">28 Pieces</div>
+            <div class="cat-link">Explore <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Featured Products ───────────────────────────────────── -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Handpicked</p>
+        <h2 class="section-title">Featured Products</h2>
+        <span class="gold-divider"></span>
+        <p class="section-subtitle">Our most loved pieces — crafted to perfection for every occasion.</p>
+      </div>
+      <div class="products-grid" id="featured-products">
+        <!-- Injected by script.js -->
+      </div>
+      <div style="text-align:center;margin-top:3rem;">
+        <a href="products.html" class="btn btn-outline">View All Collections <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Special Offers ─────────────────────────────────────── -->
+  <section class="section-pad offers-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Limited Time</p>
+        <h2 class="section-title">Special Offers</h2>
+        <span class="gold-divider"></span>
+        <p class="section-subtitle" style="color:rgba(250,243,224,.7)">Use exclusive codes and save on your favourite picks</p>
+      </div>
+      <div class="offers-grid">
+        <div class="offer-card reveal">
+          <div class="offer-icon">💍</div>
+          <div class="offer-title">Bridal Collection</div>
+          <div class="offer-desc">Flat 20% off on all bridal lehengas and sherwanis. Perfect for your special day.</div>
+          <span class="offer-code">BRIDAL20</span>
+        </div>
+        <div class="offer-card reveal">
+          <div class="offer-icon">🎁</div>
+          <div class="offer-title">Festive Season</div>
+          <div class="offer-desc">Enjoy 15% discount sitewide during festive season — celebrate in style.</div>
+          <span class="offer-code">FEST15</span>
+        </div>
+        <div class="offer-card reveal">
+          <div class="offer-icon">🚚</div>
+          <div class="offer-title">Free Shipping</div>
+          <div class="offer-desc">Get free shipping on all orders above ₹2,500 across India. Shop more, save more.</div>
+          <span class="offer-code">SHIP2500</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Customer Reviews ────────────────────────────────────── -->
+  <section class="section-pad" style="background:var(--cream-dark);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Testimonials</p>
+        <h2 class="section-title">What Our Customers Say</h2>
+        <span class="gold-divider"></span>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The Banarasi saree I ordered was absolutely breathtaking. The zari work was exquisite and the fabric so luxurious. Got so many compliments at my brother's wedding!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">P</div>
+            <div>
+              <div class="reviewer-name">Priya Sharma</div>
+              <div class="reviewer-loc">Mumbai, Maharashtra</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Ordered a sherwani for my wedding and it was absolutely royal! The embroidery was flawless and the delivery was super prompt. Highly recommend Manas!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">R</div>
+            <div>
+              <div class="reviewer-name">Rahul Verma</div>
+              <div class="reviewer-loc">Delhi, NCR</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">"The lehenga is stunning — exactly as shown. The colours were vibrant and the quality superb. Stitching quality is top-notch. Will definitely shop again from Manas."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">A</div>
+            <div>
+              <div class="reviewer-name">Ananya Iyer</div>
+              <div class="reviewer-loc">Bengaluru, Karnataka</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ──────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div>
+          <div class="footer-brand-logo">M<span>anas</span></div>
+          <p class="footer-brand-desc">Celebrating the art of Indian textile heritage since 2000. Each garment tells a story of culture, tradition, and timeless elegance.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Collections</div>
+          <ul class="footer-links">
+            <li><a href="products.html?cat=saree">Sarees</a></li>
+            <li><a href="products.html?cat=lehenga">Lehengas</a></li>
+            <li><a href="products.html?cat=kurta">Kurtas</a></li>
+            <li><a href="products.html?cat=sherwani">Sherwanis</a></li>
+            <li><a href="products.html?cat=ethnic">Ethnic Wear</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Store Locator</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact Us</div>
+          <div class="footer-contact-item">
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            <span>12, Textile Market, Chandni Chowk, New Delhi – 110006</span>
+          </div>
+          <div class="footer-contact-item">
+            <span><i class="fas fa-phone"></i></span>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="footer-contact-item">
+            <span><i class="fas fa-envelope"></i></span>
+            <span>hello@manasclothing.in</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Manas Clothing. All Rights Reserved.</span>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="#" style="color:inherit;">Privacy Policy</a>
+          <a href="#" style="color:inherit;">Terms of Service</a>
+          <a href="#" style="color:inherit;">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Toast ───────────────────────────────────────────────── -->
+  <div class="toast" id="toast">
+    <span class="toast-icon" id="toast-icon">🛍️</span>
+    <span id="toast-msg">Added to cart!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
